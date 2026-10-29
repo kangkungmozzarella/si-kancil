@@ -1,7 +1,7 @@
 import { makeCanvas, seeded } from '../engine/pixel';
 import { MAX_VIEW_W, VIEW_H, VIEW_W } from './constants';
 
-export type ThemeName = 'pagi' | 'siang' | 'sore' | 'senja' | 'malam';
+export type ThemeName = 'pagi' | 'siang' | 'sore' | 'senja' | 'malam' | 'kebun' | 'hujan' | 'rawa' | 'merah' | 'fajar';
 
 interface Theme {
   skyTop: string;
@@ -55,6 +55,36 @@ const THEMES: Record<ThemeName, Theme> = {
     mountain: '#25305a', mountainShade: '#1b2548', smoke: '#5a6896',
     hills: '#1f3a3f', hillsDark: '#14272c', field: '#27474a', fieldLine: '#3a6264',
     house: '#10162b', roof: '#0a0e1d', cloud: '#4a5a8c', cloudShade: '#34426e', fireflies: true,
+  },
+  kebun: {
+    skyTop: '#8fd0e8', skyBottom: '#fff0b0', sun: '#fffbd0', sunGlow: '#ffe890', sunX: 40, sunY: 60, sunR: 14,
+    mountain: '#a6c4a0', mountainShade: '#8fb08a', smoke: '#eef5e0',
+    hills: '#7ab04e', hillsDark: '#558a3c', field: '#a0cc56', fieldLine: '#c8e87c',
+    house: '#7a5236', roof: '#5a3624', cloud: '#fffdf0', cloudShade: '#e8eccc', fireflies: false,
+  },
+  hujan: {
+    skyTop: '#56687c', skyBottom: '#aebdc8', sun: '#d6dde2', sunGlow: '#bcc7cf', sunX: 160, sunY: 36, sunR: 11,
+    mountain: '#6a7c90', mountainShade: '#586a7e', smoke: '#cdd6dc',
+    hills: '#4c7a5a', hillsDark: '#365a44', field: '#5d8c5c', fieldLine: '#7aa87a',
+    house: '#4a3a30', roof: '#2e2420', cloud: '#c4cdd4', cloudShade: '#8e9ba6', fireflies: false,
+  },
+  rawa: {
+    skyTop: '#6a8a5a', skyBottom: '#e6d49a', sun: '#f4e8b0', sunGlow: '#d8c878', sunX: 270, sunY: 90, sunR: 18,
+    mountain: '#5f7a58', mountainShade: '#4c6648', smoke: '#cfd2a8',
+    hills: '#4a6a3a', hillsDark: '#324c2a', field: '#6a8a3a', fieldLine: '#92aa52',
+    house: '#46361f', roof: '#2c2214', cloud: '#e8e2b8', cloudShade: '#b8b080', fireflies: false,
+  },
+  merah: {
+    skyTop: '#4a1f4a', skyBottom: '#e8603c', sun: '#ffb070', sunGlow: '#ff8050', sunX: 140, sunY: 150, sunR: 26,
+    mountain: '#6a2f4a', mountainShade: '#52233c', smoke: '#d89080',
+    hills: '#4a2840', hillsDark: '#321a2c', field: '#5a3040', fieldLine: '#7a4a50',
+    house: '#24141e', roof: '#160c14', cloud: '#f09070', cloudShade: '#b0505a', fireflies: false,
+  },
+  fajar: {
+    skyTop: '#141c44', skyBottom: '#f0a0a8', sun: '#ffe8b0', sunGlow: '#ffc0a0', sunX: 60, sunY: 150, sunR: 20,
+    mountain: '#3a4478', mountainShade: '#2c3562', smoke: '#9aa0c8',
+    hills: '#2a4a58', hillsDark: '#1c3340', field: '#386068', fieldLine: '#528082',
+    house: '#141a30', roof: '#0c1020', cloud: '#e8a8b8', cloudShade: '#a0749c', fireflies: true,
   },
 };
 
