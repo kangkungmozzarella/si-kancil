@@ -1,7 +1,7 @@
 # Si Kancil — Petualangan di Kampung
 
 Game platformer 2D berbasis HTML5 Canvas, remake dari game "Frog Adventure" (kode lama tersimpan di [`legacy/`](legacy/)).
-Si Kancil berlari dari sawah Pak Tani, menyeberangi sungai lewat punggung buaya, sampai ke candi di atas bukit.
+Si Kancil berlari dari sawah Pak Tani, menyeberangi sungai lewat punggung buaya, melewati candi di atas bukit, lalu pulang lewat hutan di malam hari.
 
 Semua grafis (pixel art) dan suara (musik gamelan bertangga nada slendro) dibuat lewat kode, tanpa file gambar atau audio.
 

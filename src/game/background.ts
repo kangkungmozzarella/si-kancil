@@ -1,7 +1,7 @@
 import { makeCanvas, seeded } from '../engine/pixel';
 import { MAX_VIEW_W, VIEW_H, VIEW_W } from './constants';
 
-export type ThemeName = 'pagi' | 'siang' | 'sore' | 'senja';
+export type ThemeName = 'pagi' | 'siang' | 'sore' | 'senja' | 'malam';
 
 interface Theme {
   skyTop: string;
@@ -49,6 +49,12 @@ const THEMES: Record<ThemeName, Theme> = {
     mountain: '#5c4170', mountainShade: '#4a3360', smoke: '#c99aa0',
     hills: '#41355a', hillsDark: '#2b2342', field: '#4f3d55', fieldLine: '#6e5466',
     house: '#2a1f33', roof: '#1c1424', cloud: '#f7b48a', cloudShade: '#c27c84', fireflies: true,
+  },
+  malam: {
+    skyTop: '#0b1230', skyBottom: '#2b3a6b', sun: '#f4f1d8', sunGlow: '#8fa0d0', sunX: 220, sunY: 40, sunR: 12,
+    mountain: '#25305a', mountainShade: '#1b2548', smoke: '#5a6896',
+    hills: '#1f3a3f', hillsDark: '#14272c', field: '#27474a', fieldLine: '#3a6264',
+    house: '#10162b', roof: '#0a0e1d', cloud: '#4a5a8c', cloudShade: '#34426e', fireflies: true,
   },
 };
 
